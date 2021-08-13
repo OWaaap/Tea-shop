@@ -1,0 +1,75 @@
+@mainTextColor: #242a35;
+@BaseFontSize: 18px;
+.wrapper {
+  background-color: rgb(232, 232, 233);
+}
+.top-block,
+.bottom-block {
+  margin: auto;
+  max-width: 1000px;
+  padding: 10px;
+}
+.top-block {
+  padding: 65px 0;
+
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  grid-template-rows: 1fr;
+}
+.line {
+  height: 0.5px;
+  background-color: rgb(124, 124, 124);
+}
+.line_bold {
+  margin-top: 5px;
+  height: 1.5px;
+  background-color: @mainTextColor;
+}
+.section__section-title {
+  font-size: 39px;
+  line-height: 40px;
+  color: @mainTextColor;
+}
+.section__section-sub-title,
+.section__section-title {
+  font-style: italic;
+}
+.section__section-sub-title {
+  margin-top: 40px;
+  font-size: 22px;
+}
+.section__section-list {
+  margin-top: 35px;
+
+  li {
+    color: @mainTextColor;
+    margin-bottom: 10px;
+    font-size: @BaseFontSize;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+.section__under-title-line {
+  margin-top: 10px;
+  height: 0.5px;
+  background-color: @mainTextColor;
+  width: 65%;
+}
+.section__link {
+  margin-top: 30px;
+  text-decoration: underline;
+  font-size: @BaseFontSize;
+  color: @mainTextColor;
+}
+.section__contact-phone {
+  margin-top: 10px;
+  color: @mainTextColor;
+  font-size: @BaseFontSize;
+}
+.bottom-block {
+  padding: 30px;
+  font-size: 17px;
+  color: rgb(151, 151, 151);
+  letter-spacing: 2px;
+}

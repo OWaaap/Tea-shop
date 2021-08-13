@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="container__top-block top-block">
+    <div class="top-block__search-block">
+      <fa-icon class="search-block__search-img" [icon]="searchImg"></fa-icon>
+      <input
+        class="search-block__search-field"
+        type="text"
+        placeholder="Search..."
+      />
+    </div>
+    <div class="top-block__interactive-block">
+      <div class="log-in">
+        <fa-icon class="log-in-img" [icon]="userImg"></fa-icon>
+        <a>Log in</a>
+      </div>
+      <div class="basket">
+        <span class="basket__products-count">1</span>
+        <fa-icon [icon]="basketImg" class="basket__basket-img"> </fa-icon>
+      </div>
+    </div>
+  </div>
+  <div class="container__bottom-block bottom-block">
+    <div class="bottom-block__nav-block">
+      <nav>
+        <ul class="nav-list">
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/teas">Teas</a></li>
+          <li><a routerLink="/accessories">Accessories</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom-block__title-block">
+      <div class="bottom-block__title-border">
+        <h1 routerLink="/">The world of tea</h1>
+      </div>
+    </div>
+    <div class="bottom-block__social-block">
+      <ul class="social-list">
+        <li>fsbk</li>
+        <li>inst</li>
+        <li>pint</li>
+      </ul>
+    </div>
+  </div>
+</div>

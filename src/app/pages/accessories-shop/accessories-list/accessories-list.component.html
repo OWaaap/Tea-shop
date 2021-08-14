@@ -1,1 +1,14 @@
-<p>accessories-list works!</p>
+<div class="product-list">
+  <div
+    class="product-list__product product"
+    *ngFor="let item of accessoriesList"
+    routerLink="product-page/{{ item.id }}"
+  >
+    <div class="product__img-container">
+      <img [src]="item.productImg" width="100%" alt="product-img" />
+    </div>
+    <div class="product__product-name">{{ item.productName }}</div>
+    <div class="product__product-price">{{ item.productPrice }}</div>
+    <button class="product__to-card-btn">Add to Cart</button>
+  </div>
+</div>

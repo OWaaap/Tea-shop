@@ -4,11 +4,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
 .product-list__product {
   padding: 20px;
   text-align: center;
-  cursor: pointer;
 }
 .product__product-name {
   margin-top: 15px;
@@ -25,14 +23,13 @@
   width: 92%;
   height: 40px;
   margin-top: 15px;
-
   padding: 5px 0;
   text-align: center;
   background-color: #242a35f1;
   color: #eee;
   font-size: 15px;
   transition: all 0.2s linear;
-  &:hover {
-    background-color: #242a35a6;
-  }
+}
+.product__to-card-btn:hover {
+  background-color: #242a35a6;
 }

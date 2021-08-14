@@ -59,38 +59,38 @@
   background-color: rgba(126, 131, 141, 0.6);
   border-color: rgba(255, 255, 255, 0.1);
 }
-.new-title-wrapper,
+.page-title-wrapper,
 .title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.new-title-wrapper {
+.page-title-wrapper {
   margin-top: 30px;
   padding: 20px;
 }
-.new-title-container {
+.page-title-container {
   margin: 40px 0;
   width: 70%;
 }
-.new-title-container__title {
+.page-title-container__title {
   font-size: 42px;
   font-style: italic;
   white-space: nowrap;
   margin: 0 50px;
 }
-.new-title-container__top-block {
+.page-title-container__top-block {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.new-title-container__title-line {
+.page-title-container__title-line {
   height: 0.5px;
   width: 100%;
   background-color: #373e4e;
 }
-.new-title-container__sub-title {
+.page-title-container__sub-title {
   font-family: "Abel", sans-serif;
   margin-top: 20px;
   font-size: 18px;

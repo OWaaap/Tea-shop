@@ -1,6 +1,9 @@
 <div class="product-list">
-  <app-new-product-item></app-new-product-item>
-  <app-new-product-item></app-new-product-item>
-  <app-new-product-item></app-new-product-item>
-  <app-new-product-item></app-new-product-item>
+  <div class="product-list__product product" *ngFor="let item of products">
+    <div class="product__product-img">
+      <img [src]="item.productImg" width="100%" alt="" />
+    </div>
+    <div class="product__product-name">{{ item.productName }}</div>
+    <div class="product__product-price">{{ item.productPrice }}</div>
+  </div>
 </div>

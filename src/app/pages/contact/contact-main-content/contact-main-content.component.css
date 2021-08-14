@@ -16,3 +16,106 @@
   color: #eee;
   font-style: italic;
 }
+.page-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+.page-title-container {
+  margin: 40px 0;
+  width: 70%;
+}
+.page-title-container__title {
+  font-size: 42px;
+  font-style: italic;
+  white-space: nowrap;
+  margin: 0 50px;
+}
+.page-title-container__top-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-title-container__title-line {
+  height: 0.5px;
+  width: 100%;
+  background-color: #373e4e;
+}
+.contact-wrapper {
+  margin: 0 auto 50px;
+  max-width: 1040px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-container {
+  margin-left: 20px;
+  width: 500px;
+}
+.text-block {
+  margin-top: 10px;
+}
+.text-block h3 {
+  font-size: 25px;
+  font-style: italic;
+  color: #242a35c7;
+}
+.text-block p {
+  margin: 15px 0 0 3px;
+  line-height: 30px;
+  font-size: 17px;
+  color: #434850ce;
+}
+.text-block span {
+  text-decoration: underline;
+}
+.form {
+  margin-top: 55px;
+}
+.form__form-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form__form-input-container input {
+  width: 48%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #242a35;
+  font-size: 16px;
+}
+.form__form-input-container input::placeholder {
+  color: #878c96;
+  font-size: 16px;
+}
+.form__form-textarea-container {
+  margin-top: 10px;
+}
+.form__form-textarea-container textarea {
+  height: 150px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #242a35;
+  resize: none;
+  font-size: 16px;
+}
+.form__form-textarea-container textarea::placeholder {
+  color: #878c96;
+  font-size: 16px;
+}
+.form__form-submit-btn {
+  width: 100%;
+  background-color: #242a35;
+  color: #eee;
+  height: 40px;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.form__form-submit-btn:hover {
+  background-color: rgba(89, 95, 109, 0.9);
+}

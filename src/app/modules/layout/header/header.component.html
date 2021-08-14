@@ -23,10 +23,26 @@
     <div class="bottom-block__nav-block">
       <nav>
         <ul class="nav-list">
-          <li><a routerLink="/">Home</a></li>
-          <li><a routerLink="/teas">Teas</a></li>
-          <li><a routerLink="/accessories">Accessories</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
+          <li>
+            <a
+              routerLink="/"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a routerLink="/teas" routerLinkActive="active">Teas</a>
+          </li>
+          <li>
+            <a routerLink="/accessories" routerLinkActive="active"
+              >Accessories
+            </a>
+          </li>
+          <li>
+            <a routerLink="/contact" routerLinkActive="active">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>

@@ -16,3 +16,44 @@
   color: #eee;
   font-style: italic;
 }
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar {
+  min-width: 240px;
+  padding: 20px;
+}
+.filter-title {
+  color: #242a35cc;
+  font-size: 28px;
+  font-style: italic;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(206, 206, 206, 0.76);
+}
+.filter-item {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(206, 206, 206, 0.76);
+}
+.filter-item__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #242a35cc;
+  font-size: 18px;
+  font-style: italic;
+}
+.filter-item__more-btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(#000, #000), linear-gradient(#000, #000);
+  background-position: center;
+  background-size: 50% 1.5px, 1.5px 50%;
+  background-repeat: no-repeat;
+}
+.product-list {
+  padding: 20px;
+  width: 100%;
+}

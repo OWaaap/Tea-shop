@@ -11,22 +11,29 @@ const routes: Routes = [
   {
     path: 'teas',
     loadChildren: () =>
-      import('./pages/teas-shop/teas-shop.module').then(
+      import('./pages/teas-shop-page/teas-shop.module').then(
         (module) => module.TeasShopModule
       ),
   },
   {
     path: 'accessories',
     loadChildren: () =>
-      import('./pages/accessories-shop/accessories-shop.module').then(
+      import('./pages/accessories-shop-page/accessories-shop.module').then(
         (module) => module.AccessoriesShopModule
       ),
   },
   {
     path: 'contact',
     loadChildren: () =>
-      import('./pages/contact/contact.module').then(
+      import('./pages/contact-page/contact.module').then(
         (module) => module.ContactModule
+      ),
+  },
+  {
+    path: 'login',
+    loadChildren: () =>
+      import('./pages/login-page/login.module').then(
+        (module) => module.LoginPageModule
       ),
   },
 ];

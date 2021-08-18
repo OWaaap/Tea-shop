@@ -1,7 +1,23 @@
+<!-- <div class="wrapper">
+
+</div> -->
 <div class="wrapper">
   <div class="title-container">
     <div class="title">
       <h1>Shop Your Favorite Tea</h1>
+    </div>
+  </div>
+  <div class="categorys-container">
+    <div
+      class="categorys-container__category category"
+      *ngFor="let category of categorys"
+    >
+      <div class="category__category-img">
+        <img [src]="category.img" alt="category-img" width="100%" />
+      </div>
+      <div class="category__title">
+        <h3>{{ category.title }}</h3>
+      </div>
     </div>
   </div>
 </div>

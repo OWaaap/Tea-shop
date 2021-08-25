@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { TeaService } from 'src/app/service/tea.service';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Product } from 'src/app/models/product';
+// import * as data from '../../../../assets/test.json';
 
 @Component({
   selector: 'app-teas-main-contant',
-  templateUrl: './teas-main-contant.component.html',
-  styleUrls: ['./teas-main-contant.component.less'],
+  templateUrl: './teas-main-content.component.html',
+  styleUrls: ['./teas-main-content.component.less'],
 })
 export class TeasMainContantComponent implements OnInit {
   categorys = [
@@ -39,15 +42,30 @@ export class TeasMainContantComponent implements OnInit {
       img: 'https://mloyvexztott.i.optimole.com/gsZ96cU.e2cJ~4b1ac/w:90/h:auto/q:90/https://www.universduthe.be/wp-content/uploads/2020/03/the%CC%81-noir.png',
     },
   ];
-  // categorys = [];
 
-  constructor(private teaService: TeaService) {}
+  constructor(
+    private teaService: TeaService,
+    private firestore: AngularFirestore
+  ) {}
+  products: Product[];
+  createData(data: any) {
+    console.log(data);
 
+    this.firestore.collection('teas').add({ data });
+  }
   ngOnInit(): void {
-    this.teaService.getBlackTeas().subscribe((data) => {
-      let test = data;
-      let tmp = test;
-      console.log(test);
+    this.teaService.getData().subscribe((data) => {
+      console.log(data);
+
+      // this.teaService.getData().subscribe((data) => {
+      //   console.log(data);
+      //   this.products = data.map((item) => {
+      //     return {
+      //       ...(item.payload.doc.data() as Product),
+      //     } as Product;
+      //   });
+      //   console.log(this.products);
     });
+    // this.createData(this.teasArr);
   }
 }

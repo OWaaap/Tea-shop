@@ -1,0 +1,65 @@
+<div class="mobile-content">
+  <div class="mobile-content__top-block">
+    <div class="mobile-content__left-content">
+      <div class="mobile-content__basket" routerLink="/basket">
+        <span class="mobile-content__basket-products-count">1</span>
+        <fa-icon [icon]="basketImg" class="mobile-content__basket-img">
+        </fa-icon>
+      </div>
+      <div class="mobile-content__title">
+        <h2 routerLink="/">The world of tea</h2>
+      </div>
+    </div>
+    <div class="mobile-content__show-list-btn" (click)="showNavList()">
+      <span [ngClass]="{ first: isNavBarOpen }"></span>
+      <span [ngClass]="{ middle: isNavBarOpen }"></span>
+      <span [ngClass]="{ last: isNavBarOpen }"></span>
+    </div>
+  </div>
+  <div class="mobile-content__bottom-block">
+    <input
+      class="mobile-content__search-field"
+      type="text"
+      placeholder="Search..."
+    />
+    <fa-icon class="mobile-content__search-img" [icon]="searchImg"></fa-icon>
+  </div>
+</div>
+<div
+  class="mobile-nav-list"
+  [ngClass]="{ 'mobile-nav-list_show': isNavBarOpen }"
+>
+  <div class="log-in-container">
+    <div class="log-in" routerLink="/login">
+      <fa-icon class="log-in-img" [icon]="userImg"></fa-icon>
+      <a>Log in</a>
+    </div>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a routerLink="/teas" routerLinkActive="active">Teas</a>
+    </li>
+    <li>
+      <a routerLink="/accessories" routerLinkActive="active">Accessories </a>
+    </li>
+    <li>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </li>
+  </ul>
+  <div class="social-block">
+    <ul class="social-list">
+      <li>fsbk</li>
+      <li>inst</li>
+      <li>pint</li>
+    </ul>
+  </div>
+</div>

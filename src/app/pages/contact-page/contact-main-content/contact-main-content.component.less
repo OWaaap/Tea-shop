@@ -4,6 +4,9 @@
   background-size: cover;
   height: 75vh;
 }
+.main-contant {
+  padding: 20px;
+}
 .title-container {
   height: 100%;
   position: relative;
@@ -23,7 +26,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  padding: 20px;
 }
 .page-title-container {
   margin: 40px 0;
@@ -50,14 +52,11 @@
 
 .contact-wrapper {
   margin: 0 auto 50px;
-  max-width: 1040px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
 }
-.contact-container {
-  margin-left: 20px;
-  width: 500px;
-}
+
 .text-block {
   margin-top: 10px;
 
@@ -127,4 +126,29 @@
   &:hover {
     background-color: rgba(89, 95, 109, 0.9);
   }
+}
+@media screen and (max-width: 992px) {
+  .page-title-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-title-container__top-block {
+    flex-direction: column;
+  }
+  .page-title-container__title {
+    padding: 15px 0;
+  }
+  .contact-wrapper {
+    padding: 40px;
+  }
+  .form__form-input-container {
+    flex-direction: column;
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
 }

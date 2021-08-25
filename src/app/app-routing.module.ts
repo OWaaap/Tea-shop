@@ -36,6 +36,20 @@ const routes: Routes = [
         (module) => module.LoginPageModule
       ),
   },
+  {
+    path: 'basket',
+    loadChildren: () =>
+      import('./pages/basket-page/basket-page.module').then(
+        (module) => module.BasketPageModule
+      ),
+  },
+  {
+    path: 'admin',
+    loadChildren: () =>
+      import('./pages/admin-page/admin-page.module').then(
+        (module) => module.AdminPageModule
+      ),
+  },
 ];
 
 @NgModule({

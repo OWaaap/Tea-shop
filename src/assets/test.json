@@ -1,0 +1,304 @@
+{
+  "teas": [
+    {
+      "id": "1",
+      "kindName": "Black tea",
+      "description": "An original fragrance composed of Ceylon black tea, coffee beans and chocolate. Scattered with citrus fruit peels. A tea that will introduce you into the voluptuous universe of Brussels !",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FBruxelles-une-Fois.png?alt=media&token=eb65d869-96c8-4c12-b59f-9fc1cafa5ca9",
+      "origin": "Sri-Lanka",
+      "price": "11,90",
+      "title": "Bruxelles, une Fois",
+      "weight": "100"
+    },
+    {
+      "id": "2",
+      "kindName": "Black tea",
+      "description": "A prestigious black Ceylon tea high-grown. With long and beautiful leaves, this tea is full bodied and remarkably rounded taste. Associated with the famous black pepper Sarawak from Malaysia . It combines freshness and fruity notes of undergrowth. Dotted with blueberry flower. A haute cuisine experience !",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FCeylon-Black-Pepper-Malaysia.png?alt=media&token=cb4a2ff4-e07f-4ba7-8291-852e98653e0c",
+      "origin": "Sri-Lanka",
+      "price": "14,50",
+      "title": "Ceylon Black Pepper Malaysia",
+      "weight": "100"
+    },
+    {
+      "id": "3",
+      "kindName": "Black tea",
+      "description": "This organically grown tea is one of the best Ceylon teas. With a powerful taste and hints of spice which linger in the mouth. A generous tea that is bound to be welcomed with great enthusiasm by pampered tea lovers! A full-bodied taste that can be tempered with a cloud of milk.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FCeylon-OP-Blackwood-Organic.png?alt=media&token=097c4435-9de7-4093-aab2-a89a58f8d2a2",
+      "origin": "Sri-Lanka",
+      "price": "15,50",
+      "title": "Ceylon OP Blackwood Organic",
+      "weight": "100"
+    },
+    {
+      "id": "4",
+      "kindName": "Black tea",
+      "description": "Intentionally produced in small quantities, this black tea offers a highly exclusive and exceptional quality. It originates from the province of Anhui in China. The subtle infusion pleasantly rounds off with a chocolate tang. This tea contains only little caffeine. A perfect cup for the afternoon.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FChina-Keemun-Grande-Recolte-Organic.png?alt=media&token=98c2a5d8-1278-45be-b02f-cdc379cedf77",
+      "origin": "China",
+      "price": "12,90",
+      "title": "China Keemun Grande Récolte Organic",
+      "weight": "100"
+    },
+    {
+      "id": "5",
+      "kindName": "Black tea",
+      "description": "One of the most prestigious teas in the world organically grown. A quality premium Chinese black tea composed exclusively of golden buds. A true delight with its notes of truffle and leather. A tea which will be enthusiastically appreciated by demanding tea lovers !",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FChina-Yunnan-Celeste-Organic.png?alt=media&token=df10bad7-baf1-432e-99cc-1fc080a6346a",
+      "origin": "China",
+      "price": "19,90",
+      "title": "China Yunnan Céleste Organic",
+      "weight": "100"
+    },
+    {
+      "id": "6",
+      "kindName": "Black tea",
+      "description": "A subtle and exquisite blend of sensual black tea from Ceylon with cinnamon.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FCinnamon.png?alt=media&token=aa302561-23f6-4d5c-b62b-22559dc3db7a",
+      "origin": "Sri-Lanka",
+      "price": "11,90",
+      "title": "Cinnamon",
+      "weight": "100"
+    },
+    {
+      "id": "7",
+      "kindName": "Green tea",
+      "description": "This organically grown Long Jing (Dragon Well) Chinese green tea is characterised by a delicate aroma and a smooth, silky taste.A sophisticated blend scented with natural extracts of grapefruit and mandarine. Enhanced with citrus peels.To be drunk hot or iced without moderation. A mixture that is bound to be welcomed with great enthusiasm by pampered tea lovers!",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FBaltic-Organic.png?alt=media&token=ed3f76f3-7ac8-470c-840e-a5843254c70f",
+      "origin": "China",
+      "price": "13,90",
+      "title": "Baltic Organic",
+      "weight": "100"
+    },
+    {
+      "id": "8",
+      "kindName": "Green tea",
+      "description": "This Japanese Sencha green tea is characterized by a delicate and iodized fragrance. A luxurious recipe, subtly enhanced with coffee beans and chocolate. A gourmet tea that will not fail to be greeted with great enthusiasm by the pampered amateurs! A tea that will immerse you in the gourmet world of the city of Brussels!",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FBruxelles-deux-fois.png?alt=media&token=f353f8bc-e886-4629-8d43-839ee5f765a3",
+      "origin": "Japan",
+      "price": "16,90",
+      "title": "Bruxelles, deux fois!",
+      "weight": "100"
+    },
+    {
+      "id": "9",
+      "kindName": "Green tea",
+      "description": "Discover this elegant Chinese green tea recipe from Fujian (China) with almonds and roasted notes. Its vegetal and fruity fragrance evokes the flavors of melon and wild strawberry to refreshing mint. An irresistible and quenching blend !",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FCasablanca.png?alt=media&token=b6599203-c896-4ab7-8fda-5f5d7fc61827",
+      "origin": "China",
+      "price": "13,90",
+      "title": "Casablanca",
+      "weight": "100"
+    },
+    {
+      "id": "10",
+      "kindName": "Green tea",
+      "description": "This high-grown tea is solely harvested in spring. It gives a golden yellow infusion and its subtle taste reminds of chestnuts or wet earth after a storm. Rich in vitamin C.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FGu-Zhang-Mao-Jian.png?alt=media&token=b98165fa-1154-42b3-903f-6d56a23d85e1",
+      "origin": "China",
+      "price": "15,80",
+      "title": "China Gu Zhang Mao Jian",
+      "weight": "100"
+    },
+    {
+      "id": "11",
+      "kindName": "Green tea",
+      "description": "This green tea is characterised by a delicate aroma and a smooth, silky taste. A refined aromatic bouquet with a slightly acidic hint, enhanced with a zest of green lemon and ginger. Its intense freshness will delight tea lovers.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FEnglish-Cottage.png?alt=media&token=e05db4e3-d3c2-4f2d-86f2-621a899e8ec6",
+      "origin": "China",
+      "price": "13,90",
+      "title": "English Cottage",
+      "weight": "100"
+    },
+    {
+      "id": "12",
+      "kindName": "Green tea",
+      "description": "This singular Chinese tea is generously composed with peach and jasmine. Sprinkled with white hibiscus flowers. Its infusion reveals a delicate and refined taste. Divine !",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FExtase.png?alt=media&token=eee57b96-92c7-4627-812a-7ff7c7188831",
+      "origin": "China",
+      "price": "15,90",
+      "title": "Extase",
+      "weight": "100"
+    },
+    {
+      "id": "13",
+      "kindName": "White tea",
+      "description": "‘Silver needles’, this singular tea is grown in the Fujian Province. It consists of tender buds that are covered with tiny silvery-white needles. Its pale gold infusion holds a unique ripe grape taste and is rich in antioxidants.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FChina-Yin-Zhen.png?alt=media&token=350064b6-7511-4cfc-b406-b78e0423f24a",
+      "origin": "China",
+      "price": "29,90",
+      "title": "China Yin Zhen Silver needles",
+      "weight": "100"
+    },
+    {
+      "id": "14",
+      "kindName": "White tea",
+      "description": "‘White Peony’ is a white tea with a delicate flowery note. A blend of branches and leaves. An exceptional blend of fine white tea subtly perfumed with bergamot from Calabria. Its infusion reveals a unique fresh and delicate aroma. Low in caffeine.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FPai-Mu-Tan-Earl-Grey-Organic.png?alt=media&token=3271897b-c2be-43c1-8085-ab32f38ecab4",
+      "origin": "China",
+      "price": "12,90",
+      "title": "Pai Mu Tan Earl Grey Organic",
+      "weight": "100"
+    },
+    {
+      "id": "15",
+      "kindName": "White tea",
+      "description": "‘White Peony’ is a white tea composed of branches and leaves. An exceptional blend subtly perfumed with maple syrup and walnuts. A call for a voyage!",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FPai-Mu-Tan-Erable.png?alt=media&token=83a553bb-b3dc-4a21-b9a4-e71ab68b4ddb",
+      "origin": "China",
+      "price": "12,50",
+      "title": "Pai Mu Tan Maple",
+      "weight": "100"
+    },
+    {
+      "id": "16",
+      "kindName": "White tea",
+      "description": "An exceptional blend of ‘White Peony’ and floral note of jasmine green tea combined with fruity aromas of lychee, grapefruit, a hint of rose and peach. Its infusion reveals a unique and delicate aroma. Heaven can’t wait !",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FPai-Mu-Tan-Mlle-Beulemans.png?alt=media&token=97359378-6f59-4b9d-bdd7-beae4841cf39",
+      "origin": "China",
+      "price": "13,50",
+      "title": "Pai Mu Tan Mlle Beulemans",
+      "weight": "100"
+    },
+    {
+      "id": "17",
+      "kindName": "White tea",
+      "description": "This prestigious tea is used in China for its therapeutic properties and is heavy in antioxidants. A seductive mix of delicate, fine white tea subtly perfumed with natural extracts of blueberries. A dream !",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FThe-Blanc-Myrtille.png?alt=media&token=2ede0367-e9ef-44ec-8e2a-cdcf84c92d29",
+      "origin": "China",
+      "price": "18,50",
+      "title": "Thé Blanc Myrtille",
+      "weight": "100"
+    },
+    {
+      "id": "18",
+      "kindName": "White tea",
+      "description": "This prestigious tea is used in China for its therapeutic properties and is heavy in antioxidants. A seductive mix of delicate, fine white tea subtly perfumed with apricot, passion fruit and rose leaves.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FThe-Blanc-Sortilege.png?alt=media&token=38c87bfa-87c5-4a8d-9e3c-aae1a2cc3080",
+      "origin": "China",
+      "price": "23,90",
+      "title": "Thé Blanc Sortilège",
+      "weight": "100"
+    },
+    {
+      "id": "19",
+      "kindName": "Jasmin tea",
+      "description": "‘Dragon Eyes’: organically grown Chinese green tea characterised by a delicate aroma and a smooth, silky taste This tea has been shaped into pearls by hand-rolling. The rolled leaf thus retains the fragrance of the jasmine used to flavour it. The result is a spectacular, very high quality smooth tea!",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FChina-Jasmin-Tai-Mu-Long-Organic.png?alt=media&token=3b7c313f-3320-48a4-b6cb-5063d17795ec",
+      "origin": "China",
+      "price": "23,90",
+      "title": "China Jasmin Tai Mu Long Organic",
+      "weight": "100"
+    },
+    {
+      "id": "20",
+      "kindName": "Jasmin tea",
+      "description": "A highly scented seducing blend of green and black teas with bergamot and vanilla. Enriched with blue mallow flowers and jasmine blossom. A great moment of relaxation!",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FKlimt.png?alt=media&token=b9bd7c66-ae1c-4b52-a7e3-f2e4d9f0e87e",
+      "origin": "Japan",
+      "price": "13,90",
+      "title": "Klimt",
+      "weight": "100"
+    },
+    {
+      "id": "21",
+      "kindName": "Jasmin tea",
+      "description": "A Sencha green tea from China sun-drenched and flavoured with bergamot peel and garnished with jasmine blossoms. An exceptionally refreshing tonic mixture. For a unique moment of tasting pleasure.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FSecret-du-Bouddha.png?alt=media&token=9a2fd028-f2d0-4b32-89c5-d5f0e4c43172",
+      "origin": "China",
+      "price": "13,90",
+      "title": "Secret du Bouddha",
+      "weight": "100"
+    },
+    {
+      "id": "22",
+      "kindName": "Smoked tea",
+      "description": "This is a fine, subtly smoked Earl Grey with Chinese Keemun tea, smoothed by bergamot from Calabria. A real pleasure for connoisseurs!",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FEarl-Grey-Lapsang.png?alt=media&token=0a9a16da-18cb-44e1-88f5-79ce304f9120",
+      "origin": "China",
+      "price": "12,90",
+      "title": "Earl Grey Lapsang",
+      "weight": "100"
+    },
+    {
+      "id": "23",
+      "kindName": "Smoked tea",
+      "description": "This black tea from Shizuoka is a unique product because it has been smoked with cherry wood. To produce this smoked tea, the tea plants are cultivated in the purest tradition, using the “chagusaba” method, where grass is used as mulch to protect and flavor the tea leaves. A subtle blend combining the taste of Japanese black tea and the delicate smoky notes of cherry wood. A refined tasting experience!",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FJapanese-cherry-smoked-tea.png?alt=media&token=db76997a-6a29-492e-9afc-94b57ee85a74",
+      "origin": "Japan",
+      "price": "13,90",
+      "title": "Japanese cherry smoked tea + noir nature",
+      "weight": "100"
+    },
+    {
+      "id": "24",
+      "kindName": "Smoked tea",
+      "description": "A black tea from China from organic farming smoked on spruce roots. A delicate flavor that goes well with a savory dish.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FLapsang-Shaowu-Organic.png?alt=media&token=78da9e54-fda0-4191-a8af-692802159b6c",
+      "origin": "China",
+      "price": "13,90",
+      "title": "Lapsang Shaowu Organic",
+      "weight": "100"
+    },
+    {
+      "id": "25",
+      "kindName": "Rooibos tea",
+      "description": "Rooibos (a red bush in Afrikaans; l.n.: aspalatus linearis) a shrub with thin stems found exclusively in the region of Cederberg in the west of South Africa. A pleasant drink rich in polyphenols, with a low tannin level and caffeine-free. A beautiful reddish-brown coloured drink with a slight taste of hazelnut scented with with chocolate, vanilla, coffee beans and puffed rice. Are you ready for a sophisticated experience?",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FRooibos-Bruxelles.png?alt=media&token=04a48224-9341-498c-b740-dcc9c7b3ea31",
+      "origin": "South Africa",
+      "price": "13,90",
+      "title": "Rooibos Bruxelles",
+      "weight": "100"
+    },
+    {
+      "id": "26",
+      "kindName": "Rooibos tea",
+      "description": "Rooibos (a red bush in Afrikaans; l.n.: aspalatus linearis) a shrub with thin stems found exclusively in the region of Cederberg in the west of South Africa. A pleasant drink rich in polyphenols, with a low tannin level and caffeine-free. An exceptional blend subtly perfumed with caramel pieces. Gourmets only !",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FRooibos-Caramel.png?alt=media&token=49210fcb-9b1f-4a1e-a95a-79e0aa5107ee",
+      "origin": "South Africa",
+      "price": "11,90",
+      "title": "Rooibos Caramel",
+      "weight": "100"
+    },
+    {
+      "id": "27",
+      "kindName": "Rooibos tea",
+      "description": "Rooibos (a red bush in Afrikaans; l.n.: aspalatus linearis) a shrub with thin stems found exclusively in the region of Cederberg in the west of South Africa. Pleasant drink rich in polyphenols, low in tannin and free of caffeine. Beautiful red-brown liqueur with a slight hazelnut flavor enhanced with passion fruit, vine peach and wild strawberry. Dotted with multicolored cornflower flowers.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FRooibos-Cederberg.png?alt=media&token=e593be00-3568-4811-a9a1-8dd14a549d95",
+      "origin": "South Africa",
+      "price": "15,90",
+      "title": "Rooibos Cederberg",
+      "weight": "100"
+    },
+    {
+      "id": "28",
+      "kindName": "Rooibos tea",
+      "description": "Rooibos (a red bush in Afrikaans; l.n.: aspalatus linearis) a shrub with thin stems found exclusively in the region of Cederberg in the west of South Africa. A pleasant drink rich in polyphenols, with a low tannin level and caffeine-free. A beautiful reddish-brown coloured drink with a slight taste of hazelnut scented with cinnamon, cardamom, citrus peels, ginger bits, pepper, star aniseed and cloves.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FRooibos-Chai.png?alt=media&token=81632ab4-81ea-4aba-bc1a-ddef27cde2b0",
+      "origin": "India",
+      "price": "15,10",
+      "title": "Rooibos Chai",
+      "weight": "100"
+    },
+    {
+      "id": "29",
+      "kindName": "Rooibos tea",
+      "description": "Rooibos (a red bush in Afrikaans; l.n.: aspalatus linearis) a shrub with thin stems found exclusively in the region of Cederberg in the west of South Africa. A pleasant drink, rich in polyphenols, with a low tannin level and caffeine-free. A beautiful reddish-brown coloured drink with a slight taste of hazelnut scented with delicate bergamot. Spangled with corn flowers. A delight on the palate!",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FRooibos-Earl-Grey.png?alt=media&token=edb17c48-df5c-4811-b371-6d99ef8c3dd6",
+      "origin": "South Africa",
+      "price": "13,10",
+      "title": "Rooibos Earl Grey",
+      "weight": "100"
+    },
+    {
+      "id": "30",
+      "kindName": "Rooibos tea",
+      "description": "Rooibos (a red bush in Afrikaans; l.n.: aspalatus linearis) a shrub with thin stems found exclusively in the region of Cederberg in the west of South Africa. A pleasant drink rich in polyphenols, with a low tannin level and caffeine-free. A beautiful reddish-brown coloured drink with a slight taste of hazelnut scented with peels pf oranges, Eucalyptus leaves and orange blossoms.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/tea-shop-23dcd.appspot.com/o/images%20of%20tea%20products%2FRooibos-Eucalyptus-Orange.png?alt=media&token=45aea58f-dee4-4289-b413-5a266bf74987",
+      "origin": "South Africa",
+      "price": "13,90",
+      "title": "Rooibos Eucalyptus Orange",
+      "weight": "100"
+    }
+  ]
+}

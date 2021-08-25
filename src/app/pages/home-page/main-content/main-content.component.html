@@ -1,11 +1,13 @@
 <div class="wrapper">
-  <div class="title-wrapper">
-    <div class="title-container">
-      <div class="title-container__title">It's Always Tea Time</div>
-      <div class="title-container__sub-title">With Bloom's Herbal Tea</div>
-      <button class="title-container__toShop-btn" routerLink="/teas">
-        Shop now
-      </button>
+  <div class="bg-img">
+    <div class="title-wrapper">
+      <div class="title-container" [class.show-title]="isShow">
+        <div class="title-container__title">It's Always Tea Time</div>
+        <div class="title-container__sub-title">With Bloom's Herbal Tea</div>
+        <button class="title-container__toShop-btn" routerLink="/teas">
+          Shop now
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -26,7 +28,9 @@
   <button class="to-shop-btn" routerLink="/teas">Shop All</button>
 </div>
 <div class="tea-blog">
-  <h3 class="tea-blog__blog-title">Read Our Blog</h3>
+  <div class="tea-blog-img">
+    <h3 class="tea-blog__blog-title">Read Our Blog</h3>
+  </div>
 </div>
 <div class="quotes-container">
   <div class="top-block"></div>

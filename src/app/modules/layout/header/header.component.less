@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @mainColor: #eee;
-@BasefontSize: 16px;
+@baseFontSize: 16px;
 .container {
   background-color: rgba(20, 33, 53, 0.5);
   font-family: "Roboto", sans-serif;
@@ -44,7 +44,7 @@
 .log-in {
   cursor: pointer;
   font-weight: 300;
-  font-size: @BasefontSize;
+  font-size: @baseFontSize;
   margin-right: 30px;
 
   transition: all 0.1s linear;
@@ -53,7 +53,7 @@
   }
 }
 .log-in-img {
-  font-size: 16px;
+  font-size: @baseFontSize;
   margin-right: 15px;
 }
 .basket {
@@ -103,7 +103,7 @@
   display: flex;
   align-items: center;
   li {
-    font-size: @BasefontSize;
+    font-size: @baseFontSize;
     font-weight: 300;
     &:last-child {
       margin: 0;
@@ -123,29 +123,7 @@
     }
   }
 }
-.bottom-block__title-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bottom-block__title-border {
-  padding: 25px;
-  display: inline-block;
-  border: 1px solid rgb(219, 219, 219);
-  border-top: 0;
-  border-bottom: 0;
-  cursor: pointer;
-  &:hover h1 {
-    text-shadow: 0 0 10px @mainColor;
-  }
 
-  h1 {
-    transition: all 0.1s linear;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: @BasefontSize;
-  }
-}
 .bottom-block__social-block {
   height: 100%;
   display: flex;
@@ -169,4 +147,51 @@
       margin: 0;
     }
   }
+}
+
+@media screen and (max-width: 992px) {
+  .top-block {
+    padding: 10px 15px;
+  }
+
+  .bottom-block {
+    padding: 0 10px;
+  }
+
+  .nav-list li a {
+    padding: 25px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    border-bottom: none;
+    display: grid;
+  }
+  .container__top-block {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .search-block__search-field {
+    width: 100%;
+  }
+  .top-block__interactive-block {
+    justify-content: flex-end;
+  }
+
+  .container__bottom-block {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px 0;
+  }
+  .log-in {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    display: none;
+  }
+  // .mobile-content {
+  //   display: block;
+  // }
 }

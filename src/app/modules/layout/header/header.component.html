@@ -8,12 +8,14 @@
         placeholder="Search..."
       />
     </div>
+    <app-main-title-link *ngIf="isTablet"></app-main-title-link>
+
     <div class="top-block__interactive-block">
       <div class="log-in" routerLink="/login">
         <fa-icon class="log-in-img" [icon]="userImg"></fa-icon>
         <a>Log in</a>
       </div>
-      <div class="basket">
+      <div class="basket" routerLink="/basket">
         <span class="basket__products-count">1</span>
         <fa-icon [icon]="basketImg" class="basket__basket-img"> </fa-icon>
       </div>
@@ -46,11 +48,7 @@
         </ul>
       </nav>
     </div>
-    <div class="bottom-block__title-block">
-      <div class="bottom-block__title-border">
-        <h1 routerLink="/">The world of tea</h1>
-      </div>
-    </div>
+    <app-main-title-link *ngIf="!isTablet"></app-main-title-link>
     <div class="bottom-block__social-block">
       <ul class="social-list">
         <li>fsbk</li>
@@ -60,3 +58,4 @@
     </div>
   </div>
 </div>
+<app-header-mobile *ngIf="isMobile"></app-header-mobile>

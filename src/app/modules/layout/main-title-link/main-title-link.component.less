@@ -1,0 +1,33 @@
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-title__title-border {
+  padding: 20px;
+  border: 1px solid rgb(219, 219, 219);
+  border-top: 0;
+  border-bottom: 0;
+  cursor: pointer;
+  &:hover h1 {
+    text-shadow: 0 0 10px #eee;
+  }
+
+  h1 {
+    transition: all 0.1s linear;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-title__title-border {
+    border: none;
+    padding: 0;
+    padding-bottom: 5px;
+    h1 {
+      letter-spacing: 2px;
+    }
+  }
+}

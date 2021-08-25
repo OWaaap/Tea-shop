@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TeasItemComponent } from './teas-item/teas-item.component';
-import { TeasMainContantComponent } from './teas-main-contant/teas-main-contant.component';
+import { TeasMainContantComponent } from './teas-main-content/teas-main-content.component';
 
 const routes: Routes = [
   {

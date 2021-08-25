@@ -1,21 +1,17 @@
 export interface ShopDataModel {
-  categories: [
+  categoryName: string;
+  kinds: [
     {
-      categoryName: string;
-      kinds: [
+      kindName: string;
+      products: [
         {
-          kindName: string;
-          products: [
-            {
-              description: string;
-              img: string;
-              id: number;
-              price: string;
-              origin: string;
-              weight: string;
-              title: string;
-            }
-          ];
+          description: string;
+          img: string;
+          id: string;
+          price: string;
+          origin: string;
+          weight: string;
+          title: string;
         }
       ];
     }

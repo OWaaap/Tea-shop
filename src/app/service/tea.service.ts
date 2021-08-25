@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
-import { AngularFireList, AngularFireDatabase } from '@angular/fire/database';
-import { ShopDataModel } from '../models/shop-data-model';
+import { AngularFirestore } from '@angular/fire/firestore';
+
 @Injectable({
   providedIn: 'root',
 })
 export class TeaService {
-  categorys: AngularFireList<ShopDataModel>;
-  constructor(private db: AngularFireDatabase) {}
+  constructor(private firestore: AngularFirestore) {}
 
-  getBlackTeas() {
-    this.categorys = this.db.list('categories');
-    return this.categorys.valueChanges();
+  getData() {
+    // return this.firestore.collection('teas').snapshotChanges();
+    return this.firestore.collection('teas').valueChanges();
   }
 }

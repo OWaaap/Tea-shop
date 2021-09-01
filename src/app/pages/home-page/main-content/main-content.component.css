@@ -97,11 +97,11 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .page-title-container__title-line {
   height: 0.5px;
-  width: 100%;
+  width: 23%;
   background-color: #373e4e;
 }
 .page-title-container__sub-title {

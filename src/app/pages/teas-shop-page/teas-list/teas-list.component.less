@@ -21,16 +21,26 @@
     bottom: 30px;
   }
 }
+.product__info {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .product__img-container {
   width: 60%;
   padding: 20px 0;
   position: relative;
   bottom: 0;
   transition: all 0.2s ease;
+  img {
+    max-height: 200px;
+  }
 }
 
 .product__product-name {
-  font-size: 25px;
+  font-size: 20px;
   font-style: italic;
   color: #626b78;
 }
@@ -40,9 +50,9 @@
   color: #626b78;
 }
 .product__to-card-btn {
-  width: 92%;
+  margin: 20px 0;
+  width: 100%;
   height: 40px;
-  margin: 15px 0 25px;
 
   padding: 5px 0;
   text-align: center;

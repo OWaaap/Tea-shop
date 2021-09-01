@@ -1,0 +1,38 @@
+.top-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__img {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  padding: 20px;
+}
+.product__info {
+  width: 60%;
+}
+.info-block {
+  margin-top: 10px;
+}
+.info-block label {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.info-block label input,
+.info-block label textarea {
+  margin-top: 10px;
+  width: 100%;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+}
+.info-block label input {
+  padding: 5px 10px;
+  height: 35px;
+}
+.info-block label textarea {
+  padding: 10px;
+  height: 200px;
+  resize: none;
+}

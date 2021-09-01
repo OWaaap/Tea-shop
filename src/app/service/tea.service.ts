@@ -8,7 +8,7 @@ export class TeaService {
   constructor(private firestore: AngularFirestore) {}
 
   getData() {
-    // return this.firestore.collection('teas').snapshotChanges();
-    return this.firestore.collection('teas').valueChanges();
+    return this.firestore.collection('teas').snapshotChanges();
+    // return this.firestore.collection('teas').valueChanges();
   }
 }

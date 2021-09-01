@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import {
-  MatDialog,
-  MatDialogRef,
-  MAT_DIALOG_DATA,
-} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
+import { Product } from 'src/app/models/product';
+import { AdminEditModalWindowComponent } from '../admin-edit-modal-window/admin-edit-modal-window.component';
 
 @Component({
   selector: 'app-admin-main-content',
@@ -13,7 +11,6 @@ import {
 })
 export class AdminMainContentComponent implements OnInit {
   displayedColumns: string[] = [
-    'id',
     'img',
     'title',
     'kindName',
@@ -131,25 +128,14 @@ export class AdminMainContentComponent implements OnInit {
 
   constructor(public dialog: MatDialog) {}
 
-  openDialog(): void {
-    const dialogRef = this.dialog.open(AdminMainContentComponent, {
-      width: '250px',
-      data: {
-        img: '',
-        title: '',
-        kindName: '',
-        price: '',
-        description: '',
-        origin: '',
-        weight: '',
-        edit: '',
-        delete: '',
-      },
+  openDialog(product: Product): void {
+    const dialogRef = this.dialog.open(AdminEditModalWindowComponent, {
+      maxWidth: '1100px',
+      data: product,
     });
 
-    dialogRef.afterClosed().subscribe((result) => {
+    dialogRef.afterClosed().subscribe(() => {
       console.log('The dialog was closed');
-      // this.animal = result;
     });
   }
 

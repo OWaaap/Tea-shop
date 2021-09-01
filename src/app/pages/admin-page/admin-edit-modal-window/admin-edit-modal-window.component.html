@@ -1,1 +1,78 @@
-<p>admin-edit-modal-window works!</p>
+<div class="wrapper">
+  <div class="product">
+    <div class="top-block">
+      <div class="product__img">
+        <img [src]="data.img" alt="product img" width="100%" />
+      </div>
+      <div class="product__info">
+        <div class="info-block">
+          <label>
+            Title:
+            <input
+              type="text"
+              class="product__title"
+              name="title"
+              [value]="data.title"
+            />
+          </label>
+        </div>
+        <div class="info-block">
+          <label>
+            Kind:
+            <input
+              type="text"
+              class="product__kind"
+              name="kind"
+              [value]="data.kindName"
+            />
+          </label>
+        </div>
+        <div class="info-block">
+          <label>
+            Price:
+            <input
+              type="text"
+              class="product__price"
+              name="price"
+              [value]="data.price"
+            />
+          </label>
+        </div>
+        <div class="info-block">
+          <label>
+            Origin:
+            <input
+              type="text"
+              class="product__origin"
+              name="origin"
+              [value]="data.origin"
+            />
+          </label>
+        </div>
+        <div class="info-block">
+          <label>
+            Weight:
+            <input
+              type="text"
+              class="product__weight"
+              name="weight"
+              [value]="data.weight"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-block">
+      <div class="info-block">
+        <label>
+          Description:
+          <textarea
+            name="description"
+            class="product__description"
+            [value]="data.description"
+          ></textarea>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

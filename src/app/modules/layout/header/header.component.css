@@ -88,7 +88,7 @@
   cursor: pointer;
 }
 .basket__products-count {
-  padding: 2px 5px;
+  padding: 0px 6px;
   text-align: center;
   position: absolute;
   right: -9px;

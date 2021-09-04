@@ -15,24 +15,14 @@
 .info-block {
   margin-top: 10px;
 }
-.info-block label {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-}
-.info-block label input,
-.info-block label textarea {
-  margin-top: 10px;
-  width: 100%;
-  border: 2px solid #cccccc;
-  border-radius: 5px;
-}
-.info-block label input {
-  padding: 5px 10px;
-  height: 35px;
-}
-.info-block label textarea {
+.info-block textarea {
   padding: 10px;
-  height: 200px;
+  height: 150px;
   resize: none;
+}
+.full-width {
+  width: 100%;
+}
+.submit-btn {
+  width: 200px;
 }

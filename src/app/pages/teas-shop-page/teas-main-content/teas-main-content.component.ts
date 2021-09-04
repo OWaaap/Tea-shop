@@ -3,6 +3,7 @@ import { TeaService } from 'src/app/service/tea.service';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { ShopDataModel } from 'src/app/models/shop-data-model';
 import { Product } from 'src/app/models/product';
+import { ProductService } from 'src/app/service/product.service';
 // import * as data from '../../../../assets/test.json';
 
 @Component({
@@ -46,25 +47,24 @@ export class TeasMainContantComponent implements OnInit {
 
   constructor(
     private teaService: TeaService,
-    private firestore: AngularFirestore
+    private firestore: AngularFirestore,
+    private productService: ProductService
   ) {}
-  products: Product[];
   // createData(data: any) {
   //   console.log(data.teas);
   //   for (const product of data.teas) {
   //     this.firestore.collection('teas').add({ product });
   //   }
   // }
+  products: ShopDataModel[];
   ngOnInit(): void {
-    this.teaService.getData().subscribe((data) => {
+    this.productService.getData('teas').subscribe((data) => {
       this.products = data.map((item) => {
         return {
           id: item.payload.doc.id,
-          ...(item.payload.doc.data() as Product),
-        } as Product;
+          ...(item.payload.doc.data() as ShopDataModel),
+        } as ShopDataModel;
       });
-
-      console.log(this.products);
     });
 
     // this.createData(this.products);

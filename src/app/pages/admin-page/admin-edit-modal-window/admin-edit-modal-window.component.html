@@ -1,78 +1,57 @@
 <div class="wrapper">
-  <div class="product">
-    <div class="top-block">
-      <div class="product__img">
-        <img [src]="data.img" alt="product img" width="100%" />
-      </div>
-      <div class="product__info">
-        <div class="info-block">
-          <label>
-            Title:
-            <input
-              type="text"
-              class="product__title"
-              name="title"
-              [value]="data.title"
-            />
-          </label>
+  <form [formGroup]="options" (submit)="onSubmit()">
+    <div class="product">
+      <div class="top-block">
+        <div class="product__img">
+          <img
+            [src]="data.product.img"
+            alt="product img"
+            width="80%"
+            height="auto"
+          />
         </div>
-        <div class="info-block">
-          <label>
-            Kind:
-            <input
-              type="text"
-              class="product__kind"
-              name="kind"
-              [value]="data.kindName"
-            />
-          </label>
-        </div>
-        <div class="info-block">
-          <label>
-            Price:
-            <input
-              type="text"
-              class="product__price"
-              name="price"
-              [value]="data.price"
-            />
-          </label>
-        </div>
-        <div class="info-block">
-          <label>
-            Origin:
-            <input
-              type="text"
-              class="product__origin"
-              name="origin"
-              [value]="data.origin"
-            />
-          </label>
-        </div>
-        <div class="info-block">
-          <label>
-            Weight:
-            <input
-              type="text"
-              class="product__weight"
-              name="weight"
-              [value]="data.weight"
-            />
-          </label>
+        <div class="product__info">
+          <div class="info-block">
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Title</mat-label>
+              <input matInput formControlName="title" />
+            </mat-form-field>
+          </div>
+          <div class="info-block">
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Kind:</mat-label>
+              <input matInput formControlName="kindName" />
+            </mat-form-field>
+          </div>
+          <div class="info-block">
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Price:</mat-label>
+              <input matInput formControlName="price" />
+            </mat-form-field>
+          </div>
+          <div class="info-block">
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Origin:</mat-label>
+              <input matInput formControlName="origin" />
+            </mat-form-field>
+          </div>
+          <div class="info-block">
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Weight:</mat-label>
+              <input matInput formControlName="weight" />
+            </mat-form-field>
+          </div>
         </div>
       </div>
+      <div class="bottom-block">
+        <div class="info-block">
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Description:</mat-label>
+            <textarea matInput formControlName="description"></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+      <button mat-raised-button class="submit-btn">Save</button>
     </div>
-    <div class="bottom-block">
-      <div class="info-block">
-        <label>
-          Description:
-          <textarea
-            name="description"
-            class="product__description"
-            [value]="data.description"
-          ></textarea>
-        </label>
-      </div>
-    </div>
-  </div>
+  </form>
 </div>

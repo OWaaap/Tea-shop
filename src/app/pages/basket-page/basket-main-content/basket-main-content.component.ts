@@ -10,7 +10,9 @@ import {
   styleUrls: ['./basket-main-content.component.less'],
 })
 export class BasketMainContentComponent implements OnInit {
-  displayedColumns: string[] = ['img', 'info', 'delete', 'quantity', 'price'];
+  basketTableColumns: string[] = ['img', 'info', 'delete', 'quantity', 'price'];
+  infoTableColumns: string[] = ['title', 'quantity', 'price'];
+
   deleteIcon = faTrashAlt;
   backIcon = faLongArrowAltLeft;
   products = [
@@ -23,6 +25,7 @@ export class BasketMainContentComponent implements OnInit {
       price: '11,90',
       title: 'Bruxelles, une Fois',
       weight: '100',
+      quantity: 1,
     },
     {
       id: '2',
@@ -33,6 +36,7 @@ export class BasketMainContentComponent implements OnInit {
       price: '14,50',
       title: 'Ceylon Black Pepper Malaysia',
       weight: '100',
+      quantity: 1,
     },
     {
       id: '3',
@@ -43,9 +47,20 @@ export class BasketMainContentComponent implements OnInit {
       price: '15,50',
       title: 'Ceylon OP Blackwood Organic',
       weight: '100',
+      quantity: 1,
     },
   ];
+
+  totalCost: string = '30.10';
   constructor() {}
 
+  removeProduct(id: string) {
+    let test: number;
+    this.products = this.products.filter((product) => product.id !== id);
+    console.log(this.products);
+  }
   ngOnInit(): void {}
+  ngOnChanges() {
+    console.log(45);
+  }
 }

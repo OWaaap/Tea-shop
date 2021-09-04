@@ -1,16 +1,16 @@
 <div class="product-list">
   <div
     class="product-list__product product"
-    *ngFor="let item of products"
+    *ngFor="let item of data"
     routerLink="product-page/{{ item.id }}"
   >
     <div class="product__product-content">
       <div class="product__img-container">
-        <img [src]="item.img" alt="product-img" />
+        <img [src]="item.product.img" alt="product-img" />
       </div>
       <div class="product__info">
-        <div class="product__product-name">{{ item.title }}</div>
-        <div class="product__product-price">${{ item.price }}</div>
+        <div class="product__product-name">{{ item.product.title }}</div>
+        <div class="product__product-price">${{ item.product.price }}</div>
         <button class="product__to-card-btn">Add to Cart</button>
       </div>
     </div>

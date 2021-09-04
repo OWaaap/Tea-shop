@@ -15,7 +15,7 @@
       <div class="bottom-block">
         <div class="product-img">
           <img
-            src="../../../../assets/img/test-product.png"
+            [src]="data?.product.img"
             width="100%"
             height="420px"
             alt="product-img"
@@ -23,16 +23,13 @@
         </div>
         <div class="product-info">
           <div class="product-info__product-name">
-            <p>Classic Tea Pot</p>
+            <p>{{ data?.product.title }}</p>
           </div>
           <div class="product-info__product-price">
-            <p>$17.00</p>
+            <p>${{ data?.product.price }}</p>
           </div>
           <div class="product-info__product-description">
-            <p>
-              I'm a product description. I'm a great place to add more details
-              about your product such as sizing, material, care instructions
-            </p>
+            <p>{{ data?.product.description }}</p>
           </div>
           <div class="product-info__product-size">
             <p>Size</p>
@@ -57,12 +54,7 @@
   <div class="info">
     <div class="info__info-block">
       <h4>Product Info</h4>
-      <p>
-        I'm a product detail. I'm a great place to add more information about
-        your product such as sizing, material, care and cleaning instructions.
-        This is also a great space to write what makes this product special and
-        how your customers can benefit from this item.
-      </p>
+      <p>{{ data?.product.description }}</p>
     </div>
     <div class="info__info-block">
       <h4>Return & Refund Policy</h4>

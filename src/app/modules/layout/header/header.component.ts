@@ -11,17 +11,16 @@ import {
   styleUrls: ['./header.component.less'],
 })
 export class HeaderComponent implements OnInit {
+  constructor() {}
+
   searchImg = faSearch;
   basketImg = faShoppingCart;
   userImg = faUserAlt;
-  constructor() {}
 
   isTablet: boolean = false;
   isMobile: boolean = false;
-  ngOnInit(): void {
-    this.isTablet = this.tabletSize(window.innerWidth);
-    this.isMobile = this.mobileSize(window.innerWidth);
-  }
+
+  amountBasketProducts: number;
 
   tabletSize = (width: number) => (width <= 768 && width >= 480 ? true : false);
 
@@ -33,5 +32,15 @@ export class HeaderComponent implements OnInit {
     this.isTablet = this.tabletSize(innerWith);
 
     this.isMobile = this.mobileSize(innerWith);
+  }
+  ngOnInit(): void {
+    console.log(JSON.parse(localStorage.getItem('basketProducts') || '[]'));
+    this.isTablet = this.tabletSize(window.innerWidth);
+    this.isMobile = this.mobileSize(window.innerWidth);
+  }
+  ngDoCheck() {
+    this.amountBasketProducts = JSON.parse(
+      localStorage.getItem('basketProducts') || '[]'
+    ).length;
   }
 }

@@ -24,6 +24,7 @@ export class AdminMainContentComponent implements OnInit {
     'delete',
   ];
   deleteIcon = faTrashAlt;
+
   editIcon = faEdit;
 
   constructor(

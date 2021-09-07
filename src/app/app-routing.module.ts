@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminGuard } from './guards/admin.guard';
 import { HomePageModule } from './pages/home-page/home-page.module';
 import { MainContentComponent } from './pages/home-page/main-content/main-content.component';
 
@@ -49,6 +50,15 @@ const routes: Routes = [
       import('./pages/admin-page/admin-page.module').then(
         (module) => module.AdminPageModule
       ),
+    canActivate: [AdminGuard],
+  },
+  {
+    path: 'cabinet',
+    loadChildren: () =>
+      import('./pages/cabinet-page/cabinet-page.module').then(
+        (module) => module.CabinetPageModule
+      ),
+    // canActivate: [AdminGuard],
   },
 ];
 

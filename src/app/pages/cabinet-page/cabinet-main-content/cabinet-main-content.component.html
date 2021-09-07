@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <div class="sidebar">
+    <div class="to-home">
+      <a routerLink="/">
+        <fa-icon [icon]="toHomeIcon" class="to-home-icon"></fa-icon>
+        Back to home page
+      </a>
+    </div>
+    <div class="sidebar__user-info">
+      <fa-icon [icon]="userIcon" class="userIcon"></fa-icon>
+      <div class="text">
+        <div class="user-name">uid: {{ user.uid }}</div>
+        <div class="user-email">{{ user.email }}</div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="sidebar__user-purchase-history">
+      <fa-icon [icon]="historyIcon" class="history-icon"></fa-icon>
+      Purchase history
+    </div>
+  </div>
+  <div class="main-content">
+    <h2>Personal information</h2>
+    <div class="content">
+      <div class="content__top-block">
+        <div class="content__title-text">
+          <fa-icon [icon]="userIcon" class="userIcon"></fa-icon>
+          <h3>Personal information:</h3>
+        </div>
+        <div class="content__edit-btn" (click)="editUserInfo()" *ngIf="!isEdit">
+          Edit
+          <fa-icon [icon]="editIcon" class="editIcon"></fa-icon>
+        </div>
+      </div>
+      <app-cabinet-user-data
+        *ngIf="!isEdit"
+        [user]="userInfo"
+      ></app-cabinet-user-data>
+      <app-cabinet-new-user-data *ngIf="isEdit"></app-cabinet-new-user-data>
+    </div>
+  </div>
+</div>

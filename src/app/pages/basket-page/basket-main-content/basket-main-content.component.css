@@ -58,7 +58,7 @@ table td {
 }
 .info-block__table th,
 .info-block__table td {
-  text-align-last: left;
+  text-align: left;
 }
 .info-block__title {
   font-size: 18px;

@@ -1,0 +1,57 @@
+<form class="form">
+  <div class="inputs-container">
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        placeholder="Enter your name"
+        [(ngModel)]="name"
+        name="name"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Surname</mat-label>
+      <input
+        matInput
+        placeholder="Enter your surname"
+        [(ngModel)]="surname"
+        name="surname"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Middle name</mat-label>
+      <input
+        matInput
+        placeholder="Enter your middle name"
+        [(ngModel)]="middleName"
+        name="middleName"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Phone number</mat-label>
+      <input
+        matInput
+        placeholder="Enter your phone number"
+        [(ngModel)]="phoneNumber"
+        name="phoneNumber"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Date of birth</mat-label>
+      <input
+        matInput
+        placeholder="Enter your date of birth"
+        [(ngModel)]="dateBirth"
+        name="dateBirth"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Sex</mat-label>
+      <mat-select [(ngModel)]="sex" name="sex">
+        <mat-option value="Male"> Male </mat-option>
+        <mat-option value="female"> Female </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</form>
+<button mat-stroked-button (click)="saveUserInfo()">Save</button>

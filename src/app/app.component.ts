@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'TeaShop';
   withoutHeader = false;
   event$;
-  routes = ['/admin', '/login', '/basket'];
+  routes = ['/admin', '/login', '/basket', '/cabinet'];
 
   constructor(private location: Location) {
     this.event$ = location.onUrlChange((val) => {

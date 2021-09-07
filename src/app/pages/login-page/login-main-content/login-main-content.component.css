@@ -24,13 +24,16 @@
   font-size: 45px;
   font-style: italic;
 }
-.title p {
+.sub-title {
   margin-top: 20px;
   font-size: 18px;
   color: #626b78;
 }
-.title a {
+.sub-title button {
+  margin-left: 5px;
+  font-size: 18px;
   color: #7070b6;
+  background-color: #00000000;
 }
 .form {
   margin-bottom: 40px;

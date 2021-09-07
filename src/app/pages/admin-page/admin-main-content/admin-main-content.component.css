@@ -2,6 +2,7 @@
   padding: 20px;
 }
 table {
+  margin-top: 30px;
   width: 100%;
 }
 table td,
@@ -29,4 +30,7 @@ table .title-column {
 .edit-btn,
 .delete-btn {
   background-color: rgba(255, 255, 255, 0);
+}
+.add-product-btn {
+  width: 200px;
 }

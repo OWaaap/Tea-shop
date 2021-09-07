@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "tea-shop-23dcd"
+  },
+  "targets": {
+    "tea-shop-23dcd": {
+      "hosting": {
+        "TeaShop": [
+          "tea-shop-23dcd"
+        ]
+      }
+    }
   }
 }

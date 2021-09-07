@@ -1,0 +1,107 @@
+.to-home {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.to-home a,
+.to-home .to-home-icon {
+  font-size: 17px;
+  color: #4e2b8eec;
+}
+.to-home .to-home-icon {
+  margin-right: 5px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 20px;
+}
+.sidebar {
+  position: relative;
+  min-width: 300px;
+  height: 100vh;
+  margin-right: 20px;
+  border-right: 1px solid #d1d1d1;
+}
+.sidebar__user-info {
+  display: flex;
+  align-items: center;
+}
+.userIcon {
+  margin-right: 10px;
+  font-size: 22px;
+}
+.text {
+  line-height: 15px;
+}
+.sidebar__user-info,
+.sidebar__user-purchase-history {
+  margin-right: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.history-icon {
+  margin-right: 10px;
+}
+.sidebar__user-info {
+  background-color: #58339b8a;
+}
+.line {
+  margin-top: 10px;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background-color: #d1d1d1;
+}
+.sidebar__user-purchase-history {
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s linear;
+}
+.sidebar__user-purchase-history:hover {
+  background-color: #58339b8a;
+}
+.user-name {
+  font-size: 13px;
+}
+.user-email {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #1f1f1f;
+  font-weight: 300;
+}
+h2 {
+  font-size: 22px;
+}
+.main-content {
+  width: 70%;
+}
+.content {
+  padding: 16px;
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+}
+.content__top-block,
+.content__title-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content__top-block {
+  margin-bottom: 20px;
+}
+.content__title-text h3 {
+  margin: 0;
+}
+.content__edit-btn {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+.content__edit-btn:hover {
+  color: #57339bad;
+}
+.content__edit-btn .editIcon {
+  margin-left: 10px;
+}

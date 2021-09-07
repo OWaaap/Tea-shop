@@ -29,8 +29,6 @@ export class AuthService {
         userData?.uid === adminUid
           ? this.router.navigate(['admin'])
           : this.router.navigate(['cabinet']);
-
-        // this.firestore.collection('users').add();
       });
   }
 

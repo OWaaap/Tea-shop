@@ -5,7 +5,6 @@ import { TeasShopRoutingModule } from './teas-shop-routing.module';
 import { TeasListComponent } from './teas-list/teas-list.component';
 import { TeasItemComponent } from './teas-item/teas-item.component';
 import { TeasMainContantComponent } from './teas-main-content/teas-main-content.component';
-import { TeaService } from 'src/app/service/tea.service';
 
 @NgModule({
   declarations: [
@@ -14,6 +13,6 @@ import { TeaService } from 'src/app/service/tea.service';
     TeasMainContantComponent,
   ],
   imports: [CommonModule, TeasShopRoutingModule],
-  providers: [TeaService],
+  providers: [],
 })
 export class TeasShopModule {}

@@ -17,13 +17,6 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'accessories',
-    loadChildren: () =>
-      import('./pages/accessories-shop-page/accessories-shop.module').then(
-        (module) => module.AccessoriesShopModule
-      ),
-  },
-  {
     path: 'contact',
     loadChildren: () =>
       import('./pages/contact-page/contact.module').then(

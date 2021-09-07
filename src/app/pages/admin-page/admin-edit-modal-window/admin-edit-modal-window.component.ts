@@ -51,7 +51,6 @@ export class AdminEditModalWindowComponent implements OnInit {
         ...this.options.value,
       },
     };
-    console.log(updateProduct);
     this.productService.updateProduct(updateProduct);
     this.matDialog.closeAll();
   }

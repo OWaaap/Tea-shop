@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   isMobile: boolean = false;
 
   amountBasketProducts: number;
+  isLogined: boolean = false;
 
   tabletSize = (width: number) => (width <= 768 && width >= 480 ? true : false);
 
@@ -34,9 +35,11 @@ export class HeaderComponent implements OnInit {
     this.isMobile = this.mobileSize(innerWith);
   }
   ngOnInit(): void {
-    console.log(JSON.parse(localStorage.getItem('basketProducts') || '[]'));
     this.isTablet = this.tabletSize(window.innerWidth);
     this.isMobile = this.mobileSize(window.innerWidth);
+    if (localStorage.getItem('user')) {
+      this.isLogined = true;
+    }
   }
   ngDoCheck() {
     this.amountBasketProducts = JSON.parse(

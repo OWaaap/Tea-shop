@@ -8,6 +8,7 @@
     <div
       class="categorys-container__category category"
       *ngFor="let category of categorys"
+      (click)="sortTeas(category)"
     >
       <div class="category__category-img">
         <img [src]="category.img" alt="category-img" width="100%" />
@@ -19,38 +20,7 @@
   </div>
 </div>
 <div class="main-content">
-  <div class="sidebar">
-    <div class="filter-container">
-      <p class="filter-title">Filter by</p>
-      <div class="filters-list">
-        <div class="filter-item">
-          <div class="filter-item__title">
-            <p>Kinds of Tea</p>
-            <div class="filter-item__more-btn"></div>
-          </div>
-        </div>
-        <div class="filter-item">
-          <div class="filter-item__title">
-            <p>Price</p>
-            <button class="filter-item__more-btn">
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </div>
-        <div class="filter-item">
-          <div class="filter-item__title">
-            <p>Size</p>
-            <button class="filter-item__more-btn">
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="products">
-    <app-teas-list [data]="products"></app-teas-list>
+    <app-teas-list [data]="data"></app-teas-list>
   </div>
 </div>

@@ -13,8 +13,15 @@ export class TeasMainContantComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   products: ShopDataModel[];
+  data: ShopDataModel[];
   categorys: Category[];
 
+  sortTeas(category: Category) {
+    this.data = this.products.filter(
+      (item) =>
+        item.product.kindName.toLowerCase() === category.name.toLowerCase()
+    );
+  }
   ngOnInit(): void {
     this.productService.getData('teas').subscribe((data) => {
       this.products = data.map((item) => {
@@ -23,6 +30,7 @@ export class TeasMainContantComponent implements OnInit {
           ...(item.payload.doc.data() as ShopDataModel),
         } as ShopDataModel;
       });
+      this.data = this.products;
     });
     this.productService.getData('categories').subscribe((data) => {
       this.categorys = data.map((item) => {

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { Order } from '../models/order';
 import { Product } from '../models/product';
 import { ShopDataModel } from '../models/shop-data-model';
 
@@ -30,5 +31,9 @@ export class ProductService {
 
   deleteProduct(productId: string) {
     this.firestore.doc(`teas/${productId}`).delete();
+  }
+
+  buyProducts(products: Order) {
+    return this.firestore.collection('orders').add(products);
   }
 }

@@ -36,9 +36,10 @@ export class CabinetNewUserDataComponent implements OnInit {
         phoneNumber: this.phoneNumber,
         dateBirth: this.dateBirth,
         sex: this.sex,
+        uid: this.user.uid,
       },
     };
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
-    // this.userService.addUserInfo(userInfo);
+    this.userService.addUserInfo(userInfo);
   }
 }

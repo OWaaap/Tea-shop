@@ -14,9 +14,9 @@ export class TeasItemComponent implements OnInit {
     private productService: ProductService
   ) {}
   data: any;
+  addToCart() {}
   ngOnInit(): void {
     const id: string = this.activateRoute.snapshot.params['id'];
-    console.log(id);
     this.productService.getProduct('teas', id).subscribe((data) => {
       this.data = data;
     });

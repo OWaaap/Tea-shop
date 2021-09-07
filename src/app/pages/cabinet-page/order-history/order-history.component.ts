@@ -12,6 +12,7 @@ export class OrderHistoryComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
+    const user = JSON.parse(localStorage.getItem('user') || '{}');
     this.productService.getData('orders').subscribe((data) => {
       this.orders = data.map((item) => {
         return {
@@ -19,7 +20,7 @@ export class OrderHistoryComponent implements OnInit {
           ...(item.payload.doc.data() as Order),
         } as Order;
       });
-      console.log(this.orders);
+      this.orders = this.orders.filter((item) => item.uid === user.uid);
     });
   }
 }

@@ -72,3 +72,25 @@ table td {
   justify-content: space-between;
   border-bottom: 1px solid #eee;
 }
+.buy-products {
+  width: 150px;
+  margin-top: 30px;
+}
+.empty-basket {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.empty-basket__title {
+  font-size: 20px;
+}
+.empty-basket__subtitle {
+  font-size: 18px;
+  color: #747474;
+}
+.empty-basket__img {
+  background: url("../../../../assets/img/basket.svg") no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}

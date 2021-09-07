@@ -21,6 +21,7 @@ export class AdminGuard implements CanActivate {
     const userUid = JSON.parse(localStorage.getItem('user') || '[]').uid;
     const isAdmin = userUid === adminUid ? true : false;
     if (!isAdmin) {
+      this.router.navigate(['/']);
       alert('You do not have the appropriate permissions to access this page');
     }
     return isAdmin;

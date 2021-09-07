@@ -17,6 +17,9 @@
         <div class="user-email">{{ loginedUser.email }}</div>
       </div>
     </div>
+    <button mat-raised-button class="log-Out" (click)="logOut()">
+      log Out
+    </button>
     <div class="line"></div>
     <div
       class="sidebar__user-purchase-history"
@@ -37,19 +40,33 @@
             <fa-icon [icon]="userIcon" class="userIcon"></fa-icon>
             <h3>Personal information:</h3>
           </div>
-          <div
-            class="content__edit-btn"
-            (click)="editUserInfo()"
-            *ngIf="!isEdit"
-          >
-            Edit
-            <fa-icon [icon]="editIcon" class="editIcon"></fa-icon>
+        </div>
+        <div class="container" *ngIf="!isEdit">
+          <div class="info-block">
+            <p class="info-block__title">Name</p>
+            <p class="info-block__value">{{ userInfo?.info?.name }}</p>
+          </div>
+          <div class="info-block">
+            <p class="info-block__title">Surname</p>
+            <p class="info-block__value">{{ userInfo?.info?.surname }}</p>
+          </div>
+          <div class="info-block">
+            <p class="info-block__title">Middle name</p>
+            <p class="info-block__value">{{ userInfo?.info?.middleName }}</p>
+          </div>
+          <div class="info-block">
+            <p class="info-block__title">Phone number</p>
+            <p class="info-block__value">{{ userInfo?.info?.phoneNumber }}</p>
+          </div>
+          <div class="info-block">
+            <p class="info-block__title">Date of birth</p>
+            <p class="info-block__value">{{ userInfo?.info?.dateBirth }}</p>
+          </div>
+          <div class="info-block">
+            <p class="info-block__title">Sex</p>
+            <p class="info-block__value">{{ userInfo?.info?.sex }}</p>
           </div>
         </div>
-        <app-cabinet-user-data
-          *ngIf="!isEdit"
-          [user]="userInfo"
-        ></app-cabinet-user-data>
         <app-cabinet-new-user-data *ngIf="isEdit"></app-cabinet-new-user-data>
       </div>
     </div>

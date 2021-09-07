@@ -5,7 +5,6 @@ import { CabinetPageRoutingModule } from './cabinet-page-routing.module';
 import { CabinetMainContentComponent } from './cabinet-main-content/cabinet-main-content.component';
 import { MaterialModule } from 'src/app/common-modules/material/material.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { CabinetUserDataComponent } from './cabinet-user-data/cabinet-user-data.component';
 import { CabinetNewUserDataComponent } from './cabinet-new-user-data/cabinet-new-user-data.component';
 import { FormsModule } from '@angular/forms';
 import { OrderHistoryComponent } from './order-history/order-history.component';
@@ -13,7 +12,6 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
 @NgModule({
   declarations: [
     CabinetMainContentComponent,
-    CabinetUserDataComponent,
     CabinetNewUserDataComponent,
     OrderHistoryComponent,
   ],

@@ -2,7 +2,9 @@
   <div class="mobile-content__top-block">
     <div class="mobile-content__left-content">
       <div class="mobile-content__basket" routerLink="/basket">
-        <span class="mobile-content__basket-products-count">1</span>
+        <span class="mobile-content__basket-products-count">{{
+          amountBasketProducts
+        }}</span>
         <fa-icon [icon]="basketImg" class="mobile-content__basket-img">
         </fa-icon>
       </div>
@@ -29,10 +31,16 @@
   class="mobile-nav-list"
   [ngClass]="{ 'mobile-nav-list_show': isNavBarOpen }"
 >
-  <div class="log-in-container">
+  <div class="log-in-container" *ngIf="!isLogined">
     <div class="log-in" routerLink="/login">
       <fa-icon class="log-in-img" [icon]="userImg"></fa-icon>
       <a>Log in</a>
+    </div>
+  </div>
+  <div class="log-in-container" *ngIf="isLogined">
+    <div class="log-in" routerLink="/login">
+      <fa-icon class="log-in-img" [icon]="userImg"></fa-icon>
+      <a>Cabinet</a>
     </div>
   </div>
   <ul class="nav-list">
@@ -57,9 +65,27 @@
   </ul>
   <div class="social-block">
     <ul class="social-list">
-      <li>fsbk</li>
-      <li>inst</li>
-      <li>pint</li>
+      <li>
+        <img
+          src="../../../../assets/icons/1485482214-facebook_78681.png"
+          alt=""
+          width="25px"
+        />
+      </li>
+      <li>
+        <img
+          src="../../../../assets/icons/pinterest_icon-icons.com_66097.png"
+          alt=""
+          width="25px"
+        />
+      </li>
+      <li>
+        <img
+          src="../../../../assets/icons/Instagram_icon-icons.com_66804.png"
+          alt=""
+          width="25px"
+        />
+      </li>
     </ul>
   </div>
 </div>

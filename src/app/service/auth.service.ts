@@ -28,7 +28,7 @@ export class AuthService {
 
         userData?.uid === adminUid
           ? this.router.navigate(['admin'])
-          : this.router.navigate(['']);
+          : this.router.navigate(['cabinet']);
 
         // this.firestore.collection('users').add();
       });
@@ -41,6 +41,7 @@ export class AuthService {
         console.log(error.code);
       })
       .then((res) => {
+        this.router.navigate(['cabinet']);
         localStorage.setItem('user', JSON.stringify(res?.user));
       });
   }

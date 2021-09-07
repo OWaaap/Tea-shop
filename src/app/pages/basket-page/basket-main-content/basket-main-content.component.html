@@ -6,7 +6,12 @@
   <div class="title">
     <h1>Basket:</h1>
   </div>
-  <div class="main-content">
+  <div class="empty-basket" *ngIf="isEmptyBasket">
+    <p class="empty-basket__title">So far there is nothing in the basket</p>
+    <p class="empty-basket__subtitle">But this can be easily fixed =)</p>
+    <div class="empty-basket__img"></div>
+  </div>
+  <div class="main-content" *ngIf="!isEmptyBasket">
     <div class="table-container">
       <table mat-table [dataSource]="products" class="mat-elevation-z8">
         <ng-container matColumnDef="img">
@@ -84,6 +89,9 @@
         <p>Total cost:</p>
         <p>$ {{ totalCost }}</p>
       </div>
+      <button mat-raised-button class="buy-products" (click)="buyProducts()">
+        To buy
+      </button>
     </div>
   </div>
 </div>

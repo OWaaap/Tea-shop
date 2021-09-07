@@ -15,9 +15,11 @@
   position: relative;
   top: 55%;
   text-align: center;
-  font-size: 45px;
   color: #eee;
   font-style: italic;
+}
+.title h1 {
+  font-size: 45px;
 }
 .page-title-wrapper {
   display: flex;

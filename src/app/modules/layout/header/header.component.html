@@ -11,9 +11,13 @@
     <app-main-title-link *ngIf="isTablet"></app-main-title-link>
 
     <div class="top-block__interactive-block">
-      <div class="log-in" routerLink="/login">
+      <div class="log-in" routerLink="/login" *ngIf="!isLogined">
         <fa-icon class="log-in-img" [icon]="userImg"></fa-icon>
         <a>Log in</a>
+      </div>
+      <div class="log-in" routerLink="/cabinet" *ngIf="isLogined">
+        <fa-icon class="log-in-img" [icon]="userImg"></fa-icon>
+        <a>Cabinet</a>
       </div>
       <div class="basket" routerLink="/basket">
         <span class="basket__products-count">{{ amountBasketProducts }}</span>
@@ -51,9 +55,27 @@
     <app-main-title-link *ngIf="!isTablet"></app-main-title-link>
     <div class="bottom-block__social-block">
       <ul class="social-list">
-        <li>fsbk</li>
-        <li>inst</li>
-        <li>pint</li>
+        <li>
+          <img
+            src="../../../../assets/icons/1485482214-facebook_78681.png"
+            alt=""
+            width="25px"
+          />
+        </li>
+        <li>
+          <img
+            src="../../../../assets/icons/pinterest_icon-icons.com_66097.png"
+            alt=""
+            width="25px"
+          />
+        </li>
+        <li>
+          <img
+            src="../../../../assets/icons/Instagram_icon-icons.com_66804.png"
+            alt=""
+            width="25px"
+          />
+        </li>
       </ul>
     </div>
   </div>

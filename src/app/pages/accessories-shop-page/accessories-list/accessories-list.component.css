@@ -33,3 +33,25 @@
 .product__to-card-btn:hover {
   background-color: #242a35a6;
 }
+@media screen and (max-width: 992px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 5px;
+    grid-gap: 1em;
+  }
+  .sidebar {
+    padding: 10px;
+  }
+  .product__product-name {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    min-width: 160px;
+    padding: 10px;
+  }
+}

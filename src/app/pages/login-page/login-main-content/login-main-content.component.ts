@@ -33,7 +33,4 @@ export class LoginMainContentComponent implements OnInit {
   onSignUp() {
     this.authService.signUp(this.newUser_email, this.newUser_password);
   }
-  logout() {
-    this.authService.signOut();
-  }
 }

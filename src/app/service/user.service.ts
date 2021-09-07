@@ -13,7 +13,4 @@ export class UserService {
   addUserInfo(userInfo: UserInfo) {
     this.firestore.collection('users').add(userInfo);
   }
-  editUserInfo(userInfo: UserInfo) {
-    // this.firestore.doc(`teas/${data.id}`).update(data);
-  }
 }

@@ -38,13 +38,10 @@ export class AdminMainContentComponent implements OnInit {
       data: product,
     });
 
-    dialogRef.afterClosed().subscribe(() => {
-      console.log('The dialog was closed');
-    });
+    dialogRef.afterClosed().subscribe(() => {});
   }
 
   deleteProduct(id: string) {
-    console.log(id);
     this.productService.deleteProduct(id);
   }
 

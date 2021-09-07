@@ -11,20 +11,20 @@ export class TeasListComponent implements OnInit {
   @Input() data: ShopDataModel[];
   constructor() {}
   addToCart(product: ShopDataModel) {
+    console.log(product);
+
     if (localStorage.getItem('basketProducts')) {
       let basketProducts = [];
       basketProducts = JSON.parse(
         localStorage.getItem('basketProducts') || '{}'
       );
+
       basketProducts.push(product);
       localStorage.setItem('basketProducts', JSON.stringify(basketProducts));
-      console.log(JSON.parse(localStorage.getItem('basketProducts') || '{}'));
     } else {
       localStorage.setItem('basketProducts', JSON.stringify([product]));
     }
     alert('Your product has been added to the cart!');
   }
-  ngOnInit(): void {
-    console.log(this.data);
-  }
+  ngOnInit(): void {}
 }

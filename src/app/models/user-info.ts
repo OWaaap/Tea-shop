@@ -1,13 +1,13 @@
 export interface UserInfo {
   id?: string;
   info: {
-    dateBirth: string;
     email: string;
-    middleName: string;
     name: string;
-    phoneNumber: number;
-    sex: string;
     surname: string;
+    middleName: string;
+    phoneNumber: number;
+    dateBirth: string;
+    sex: string;
     uid: string;
   };
 }

@@ -13,10 +13,23 @@ export class HeaderMobileComponent implements OnInit {
   searchImg = faSearch;
   basketImg = faShoppingCart;
   userImg = faUserAlt;
+
+  isLogined: boolean = false;
+  amountBasketProducts: number;
+
   constructor() {}
 
   isNavBarOpen: boolean = false;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (localStorage.getItem('user')) {
+      this.isLogined = true;
+    }
+  }
+  ngDoCheck() {
+    this.amountBasketProducts = JSON.parse(
+      localStorage.getItem('basketProducts') || '[]'
+    ).length;
+  }
   showNavList = () => (this.isNavBarOpen = !this.isNavBarOpen);
 }

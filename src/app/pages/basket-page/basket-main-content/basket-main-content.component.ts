@@ -3,7 +3,9 @@ import {
   faLongArrowAltLeft,
   faTrashAlt,
 } from '@fortawesome/free-solid-svg-icons';
+import { Order } from 'src/app/models/order';
 import { ShopDataModel } from 'src/app/models/shop-data-model';
+import { ProductService } from 'src/app/service/product.service';
 
 @Component({
   selector: 'app-basket-main-content',
@@ -18,7 +20,8 @@ export class BasketMainContentComponent implements OnInit {
   backIcon = faLongArrowAltLeft;
   products: ShopDataModel[];
   totalCost: number = 0;
-  constructor() {}
+  isEmptyBasket = false;
+  constructor(private productService: ProductService) {}
 
   removeProduct(id: string) {
     let busketProducts = [];
@@ -32,9 +35,29 @@ export class BasketMainContentComponent implements OnInit {
     this.products.forEach((item) => (this.totalCost += +item.product.price));
     localStorage.setItem('basketProducts', JSON.stringify(busketProducts));
   }
+  buyProducts() {
+    const user = JSON.parse(localStorage.getItem('user') || '{}');
+    const date = new Date();
+    const data: Order = {
+      uid: user.uid,
+      products: [...this.products],
+      date: date.toDateString(),
+      price: this.totalCost,
+    } as Order;
+
+    this.productService.buyProducts(data);
+    this.products = [];
+    localStorage.removeItem('basketProducts');
+    this.isEmptyBasket = true;
+    alert('Your order has been accepted, our manager will contact you!');
+  }
   ngOnInit(): void {
     this.totalCost = 0;
     this.products = JSON.parse(localStorage.getItem('basketProducts') || '[]');
     this.products.forEach((item) => (this.totalCost += +item.product.price));
+
+    if (this.products.length == 0) {
+      this.isEmptyBasket = true;
+    }
   }
 }

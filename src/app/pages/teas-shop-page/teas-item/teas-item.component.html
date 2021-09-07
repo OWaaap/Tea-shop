@@ -31,21 +31,11 @@
           <div class="product-info__product-description">
             <p>{{ data?.product.description }}</p>
           </div>
-          <div class="product-info__product-size">
-            <p>Size</p>
-            <select name="size_selection" class="product-info__size-selection">
-              <option value="size_125">125Gr</option>
-              <option value="size_250">250Gr</option>
-            </select>
-          </div>
-          <div class="product-info__product-quantity">
-            <p>Quantity</p>
-            <input type="number" min="1" [defaultValue]="1" />
-          </div>
           <div class="product-info__product-description"></div>
           <div class="product-info__btn-container">
-            <button class="product-info__add-to-card-btn">Add to Card</button>
-            <button class="product-info__by-now-btn">Buy Now</button>
+            <button class="product-info__add-to-card-btn" (click)="addToCart()">
+              Add to Card
+            </button>
           </div>
         </div>
       </div>

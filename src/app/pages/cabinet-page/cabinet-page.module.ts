@@ -8,12 +8,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CabinetUserDataComponent } from './cabinet-user-data/cabinet-user-data.component';
 import { CabinetNewUserDataComponent } from './cabinet-new-user-data/cabinet-new-user-data.component';
 import { FormsModule } from '@angular/forms';
+import { OrderHistoryComponent } from './order-history/order-history.component';
 
 @NgModule({
   declarations: [
     CabinetMainContentComponent,
     CabinetUserDataComponent,
     CabinetNewUserDataComponent,
+    OrderHistoryComponent,
   ],
   imports: [
     CommonModule,

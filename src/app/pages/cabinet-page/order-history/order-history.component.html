@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <h2>Order:</h2>
+  <div class="order-list">
+    <div class="order-list__item" *ngFor="let order of orders">
+      <div class="order-date">Ordered on {{ order.date }}</div>
+      <div class="product-list">
+        <div class="product-item" *ngFor="let element of order.products">
+          <div class="product-img">
+            <img [src]="element.product.img" alt="productImg" height="150px" />
+          </div>
+          <div class="product-info">
+            <div class="product-name">
+              <span>Product name:</span>
+              {{ element.product.title }}
+            </div>
+            <div class="product-price">
+              <span> Product price: </span>
+              ${{ element.product.price }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-price">
+        <span>Order price:</span>
+        ${{ order.price }}
+      </div>
+    </div>
+  </div>
+</div>

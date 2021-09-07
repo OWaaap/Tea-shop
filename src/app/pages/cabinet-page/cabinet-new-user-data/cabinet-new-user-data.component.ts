@@ -38,7 +38,7 @@ export class CabinetNewUserDataComponent implements OnInit {
         sex: this.sex,
       },
     };
-    // localStorage.setItem('userInfo', JSON.stringify(userInfo));
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
     // this.userService.addUserInfo(userInfo);
   }
 }
